@@ -1,17 +1,23 @@
 package se.lexicon;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+        //Exercise 1
+        BankAccount acc1 = new BankAccount("John Doe", 155000);
+        BankAccount acc2 = new BankAccount("John Smith", 255000);
+        BankAccount acc3 = new BankAccount("Alice Johnson", 125000);
+        BankAccount acc4 = new BankAccount("Robert Brown ", 40000);
+        BankAccount acc5 = new BankAccount("Sarah White", 709000);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+        System.out.println(acc1.getObjectsInfo());
+        System.out.println(acc2.getObjectsInfo());
+        System.out.println(acc3.getObjectsInfo());
+        System.out.println(acc4.getObjectsInfo());
+        System.out.println(acc5.getObjectsInfo());
+
+        //Exercise 2
+
+
     }
-}
+    }
+
