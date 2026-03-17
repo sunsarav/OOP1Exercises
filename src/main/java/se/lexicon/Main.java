@@ -9,11 +9,17 @@ public class Main {
         BankAccount acc4 = new BankAccount("Robert Brown ", 40000);
         BankAccount acc5 = new BankAccount("Sarah White", 709000);
 
-        System.out.println(acc1.getObjectsInfo());
-        System.out.println(acc2.getObjectsInfo());
-        System.out.println(acc3.getObjectsInfo());
-        System.out.println(acc4.getObjectsInfo());
-        System.out.println(acc5.getObjectsInfo());
+        acc1.deposit(1000);
+        acc1.withdraw(500);
+
+        acc2.deposit(2200);
+        acc2.withdraw(200);
+
+        System.out.println(acc1.getAccountHolder() + " balance: " + acc1.getBalance());
+        System.out.println(acc2.getAccountHolder() + " balance: " + acc2.getBalance());
+        System.out.println(acc3.getAccountHolder() + " balance: " + acc3.getBalance());
+        System.out.println(acc4.getAccountHolder() + " balance: " + acc4.getBalance());
+        System.out.println(acc5.getAccountHolder() + " balance: " + acc5.getBalance());
 
         //Exercise 2
         Customer num1 = new Customer("101","Rahul Sharma","rahul.s@example.com",

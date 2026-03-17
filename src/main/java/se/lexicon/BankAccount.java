@@ -18,7 +18,11 @@ public class BankAccount {
     }
 
     public void setAccountHolder(String accountHolder) {
-        this.accountHolder = accountHolder;
+        if (accountHolder == null || accountHolder.isEmpty()) {
+            throw new IllegalArgumentException("Accountholder cannot be null or empty");
+        } else {
+            this.accountHolder = accountHolder;
+        }
     }
 
     public double getBalance() {
@@ -47,11 +51,6 @@ public class BankAccount {
         throw new IllegalArgumentException("Invalid or Insufficient Balance");
         }
         }
-
-    public String getObjectsInfo() {
-        return "Name: " + accountHolder + ", Balance is: " + balance;
-
-    }
 
 
 }
