@@ -27,10 +27,10 @@ public class Main {
                 "+91 99887 76655");
 
 
-        System.out.println(num1.getName() + " - " + num1.getEmail() + " can be contacted " +
+        System.out.println(num1.getCustomerId() + " - " + num1.getEmail() + " can be contacted " +
                 num1.getPhoneNumber());
-        System.out.println(num2.getName() + " - " + num2.getEmail() + " can be contacted " +
-                num2.getPhoneNumber());
+        System.out.println(num2.getName() + " - " + num2.getEmail() + " has an ID " +
+                num2.getCustomerId());
         System.out.println();
 
         //Exercise 3 - Student
@@ -60,6 +60,17 @@ public class Main {
         //Exercise - 5 Order
         System.out.println("===ORDER===");
 
+        Order order1 = new Order(1001);
+        Order order2 = new Order(1002);
+
+        order1.addProduct(p1);
+        order1.addProduct(p2);
+
+        order2.addProduct(p3);
+
+        System.out.println(order1.calculateTotal());
+        System.out.println(order2.calculateTotal());
+        System.out.println("All Exercises Completed, GoodBye");
 
     }
     }

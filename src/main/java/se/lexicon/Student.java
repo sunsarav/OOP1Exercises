@@ -2,15 +2,15 @@ package se.lexicon;
 
 public class Student {
     private final int studentId;
-    private String name;
+    private final String name;
     private int age;
-    private String major;
+    private final String major;
 
     //Constructors
     public Student(int studentId, String name, int age, String major) {
         this.studentId = studentId;
         this.name = name;
-
+        setAge(age);
         this.major = major;
     }
 
@@ -33,19 +33,12 @@ public class Student {
 
     //Setters
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setAge(int age) {
         if (age > 0 && age < 60) {
             this.age = age;
         }
     }
 
-    public void setMajor(String major) {
-        this.major = major;
-    }
 }
 //UML Class Diagram
 
