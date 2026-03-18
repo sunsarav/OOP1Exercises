@@ -7,8 +7,8 @@ public class BankAccount {
 
     //Constructors to Initialize values
     public BankAccount(String accountHolder, double balance) {
-        setAccountHolder(accountHolder);
-        setBalance(balance);
+        this.accountHolder = accountHolder;
+        this.balance = balance;
     }
 
     //Setter and Getter
@@ -18,20 +18,20 @@ public class BankAccount {
     }
 
     public void setAccountHolder(String accountHolder) {
-        if (accountHolder == null || accountHolder.isEmpty()) {
-            throw new IllegalArgumentException("Accountholder cannot be null or empty");
-        } else {
-            this.accountHolder = accountHolder;
+        this.accountHolder = accountHolder;
         }
-    }
+
 
     public double getBalance() {
         return balance;
     }
 
     public void setBalance(double balance) {
-        this.balance = balance;
+        if (balance >= 0) {
+            this.balance = balance;
+        }
     }
+
 
     //Methods
     public void deposit(double amount) {
