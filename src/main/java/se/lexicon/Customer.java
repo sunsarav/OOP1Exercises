@@ -34,6 +34,7 @@ public class Customer {
     }
 
     public String getPhoneNumber() {
+
         return phoneNumber;
     }
 
@@ -52,8 +53,4 @@ public class Customer {
         this.email = email;
     }
 
-    public String getObjectsInfo() {
-        return "CustomerId: " + customerId + ", Name: " + name + ", Email: " + email + ", " +
-                "PhoneNumber: " + phoneNumber;
     }
-}

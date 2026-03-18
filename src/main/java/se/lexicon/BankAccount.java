@@ -6,7 +6,7 @@ public class BankAccount {
     private double balance;
 
     //Constructors to Initialize values
-    public BankAccount(String accountHolder, float balance) {
+    public BankAccount(String accountHolder, double balance) {
         setAccountHolder(accountHolder);
         setBalance(balance);
     }
@@ -39,7 +39,7 @@ public class BankAccount {
         balance += amount;
         System.out.println(amount + "Deposited");
     } else {
-        throw new IllegalArgumentException("Invalid Deposit Amount");
+        throw new IllegalArgumentException("Invalid");
     }
     }
 
