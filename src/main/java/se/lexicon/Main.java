@@ -48,8 +48,17 @@ public class Main {
         //Exercise - 4 Product
         System.out.println("===PRODUCT===");
 
-
+        Product p1 = new Product(1001,"Sunscreen",160);
+        Product p2 = new Product(1007,"Swimsuit",300);
+        Product p3 = new Product(1010,"SunHat",260);
+        System.out.println(" Product Id: " + p1.getProductId() + " priced " + p1.getPrice() +
+                " refers to " + p1.getName());
+        System.out.println(p2.getName() + " costs: " + p2.getPrice());
+        System.out.println(p3.getName() + " Id number is: " +p3.getProductId());
         System.out.println();
+
+        //Exercise - 5 Order
+        System.out.println("===ORDER===");
 
 
     }
